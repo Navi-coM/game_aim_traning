@@ -1,10 +1,15 @@
 'use strict';
  
+import { range } from './range.js';
+
 const btnStart = document.querySelector('#start');
 const allScrens = document.querySelectorAll('.screen');
 const listTimes = document.querySelector('#time_list');
 const listSizes = document.querySelector('#size_list');
 const timeCounter = document.querySelector('#time');
+
+let inputRange = document.getElementById('range-input');
+
 const board = document.querySelector('#board');
 const colors = ['#15e943', '#f31212', '#12c3f0', '#f3e51e', '#e914a9'];
  
@@ -117,3 +122,5 @@ function winGame() {
 //  ----------------------------- ДЗ ---------------------------------
 
 // Создать ползунокдял выбора времени для автоматического клика - функции killCircle
+
+inputRange.addEventListener('click', range);

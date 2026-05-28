@@ -18,8 +18,8 @@
                 </div> -->
 
                 <!-- ДЗ -->
-                 <!-- Написать код который будет запускать обратный отсчет от числа которое ввели в инпут -->
-                    <!-- с интервалом 1 сек -->
+                <!-- Написать код который будет запускать обратный отсчет от числа которое ввели в инпут -->
+                <!-- с интервалом 1 сек -->
             </section>
             <section class="screen">
                 <h1 class="title_1">Выберите Размер</h1>
@@ -45,6 +45,17 @@
                             Большой<br><small>1200×800</small></button>
                     </li>
                 </ul>
+                <div class="range-container">
+                    <label for="range-input">Выберите значение в миллисекундах для автоигры:</label>
+                    <div>
+                        <input class="range-inpt" type="range" id="range-input"
+                            min="0" max="1000"
+                            value="500">
+
+                        <span class="range-val" id="range-value">500</span>
+                    </div>
+
+                </div>
             </section>
             <section class="screen">
                 <h1 class="title_1">Выберите Время</h1>
@@ -67,7 +78,7 @@
                 </ul>
             </section>
 
-            <section class="screen">
+            <section class="screen">    
                 <div class="game-header">
                     <h2>Осталось <span id="time">00:00</span></h2>
                     <!-- <h2>Счёт: <span id="score">0</span></h2> -->
@@ -76,6 +87,6 @@
             </section>
         </main>
 
-        <script src="./js/main.js"></script>
+        <script src="./js/main.js" type="module"></script>
     </body>
 </html>
